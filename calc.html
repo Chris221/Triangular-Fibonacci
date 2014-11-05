@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Triangle & Fibonacci Calculator</title>
+<!-- BrowserIcon -->
+<link rel="icon" type="image/ico" href="/images/Galaxy.jpg" />
+<!-- Computer -->
+<link type="text/css" rel="stylesheet" href="CSS/Style.css" media="only screen and (min-width:769px)" />
+<link type="text/css" rel="stylesheet" href="CSS/Social.css" />
+<!-- Phone -->
+<link href="CSS/phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)" />
+<!-- Tablet -->
+<link href="CSS/tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:768px)" />
+<!-- Apple Icons -->
+<link rel="apple-touch-icon" href="../apple-icons/touch-icon-iphone.png" /> 
+<link rel="apple-touch-icon" sizes="76x76" href="../apple-icons/touch-icon-ipad.png" /> 
+<link rel="apple-touch-icon" sizes="120x120" href="../apple-icons/touch-icon-iphone-retina.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="../apple-icons/touch-icon-ipad-retina.png" />
+<!--[if IE]>
+<style type="text/css"> 
+#footer { zoom: 1;}
+</style>
+<![endif]-->
+
+<!-- Turn off the Lights -->
+<script src="javascript/switchCSS.js" language="JavaScript" type="text/javascript"></script>
+<!-- Calculator -->
+<script src="javascript/calc.js" language="JavaScript" type="text/javascript"></script>
+</head>
+<body class="body" onLoad="startUp()">
+<div class="top">
+	<h1>Calculator</h1>
+</div>
+<div class="topNav">
+	<!--<div class="topNavLinks"></div>-->
+	<span class="Social">
+		<a class="wsite-social-item wsite-social-mail" href="mailto:Chris@ChrisSiena.com" target="_blank"></a>
+        <a href="#" onclick="changeCSSall('CSS/Style.css', 1, 'CSS/phone.css', 3, 'CSS/tablet.css', 4);" class="hideLight">
+        	<img src="theme/bulb.png" class="light">
+        </a>
+        <a href="#" onclick="changeCSSall('CSS/DarkStyle.css', 1, 'CSS/Darkphone.css', 3, 'CSS/Darktablet.css', 4);" class="hideDark">
+        	<img src="theme/bulb.png" class="light">
+        </a>
+	</span>
+</div>
+<div class="page">
+	<div class="placeHolder"></div>
+	<div class="container">
+		<div class="leftCol">
+        	<br />
+		</div>
+		<div class="rightCol">
+        	<h2><br /></h2>
+			<h2><br /></h2>
+			<span id="tri_output">
+			</span>
+            <br />
+            <br />
+            <br />
+			<h2><br /></h2>
+            <span id="fib_output">
+            </span>
+        </div>
+  		<div class="contextArea">
+            <h2>Triangle & Fibonacci Calculator</h2>
+            <div class="text">
+                <span>
+                	<h2>Triangle Calculator</h2>
+                    <input id="tri_field" type="number" />
+                    <button id="tri_submit" onClick="tri()">Submit</button>
+                    <br />
+                </span>
+                <br />
+                <br />
+                <span>
+                	<h2>Fibonacci Calculator</h2>
+                    <input id="fib_field" type="number" />
+                    <button id="fib_submit" onClick="fib()">Submit</button>
+                </span>
+            </div>
+  		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="footerText">Copyright 2013-2014 by ChrisSiena.com. All Rights Reserved.</div>
+</div>
+</body>
+</html>
